@@ -2,7 +2,7 @@
   <h1>About {{ name }}</h1>
 </template>
 
-<script lang='ts'>
+<script setup>
   import { computed } from 'vue'
   import { useStore } from 'vuex'
 
@@ -12,7 +12,3 @@
     return store.state.user.name
   })
 </script>
-
-<style scoped>
-
-</style>
